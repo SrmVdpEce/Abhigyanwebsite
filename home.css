@@ -828,6 +828,7 @@ position: absolute;
 @media (max-width:799px) {
   html,body{
     overflow-x: hidden;
+    overscroll-behaviour:none;
   }
   #navbar {
     display: flex;
@@ -1017,6 +1018,7 @@ position: absolute;
 @media (max-width:477px){
   html,body{
     overflow-x: hidden;
+    overscroll-behaviour:none;
   }
   #header {
     padding: 10px 30px;
