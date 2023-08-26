@@ -1108,6 +1108,7 @@ position: absolute;
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
+    height:100vh;
   }
   .myfader{
     margin-left: 10px;
@@ -1121,7 +1122,7 @@ position: absolute;
   }
   .down{
     width: 700px;
-    height: calc(.5625*200vw);
+    height: calc(.5625*210vw);
     border-radius: 10px;
     background-color: #00000063;
     overflow: hidden;
@@ -1156,11 +1157,11 @@ position: absolute;
   .navigation-manual{
     
     margin-top: 0px;
-    margin-left: -180px;
+    margin-left: -200px;
   }
   .navigation-auto{
     margin-top: 500px;
-    margin-left: -180px;
+    margin-left: -200px;
   }
   .img-cont .about-img{
     margin-left: -15px;
@@ -1203,7 +1204,7 @@ position: absolute;
     position: relative;
     width: 280px;
     margin-left: 0px;
-    margin-top: 80px;
+    margin-top: 40px;
   }
   .social{
     height: 4vh;
@@ -1212,7 +1213,6 @@ position: absolute;
     font-weight: 600;
     margin-left: 20px;
     font-size: 20px;
-    margin-top: 40px;
   }
   .inner-cont .innercont-p{
     width: 60vw;
