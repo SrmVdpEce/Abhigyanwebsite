@@ -1064,7 +1064,8 @@ position: absolute;
   .promo{
     margin-bottom: 30px;
     font-size: 25px;
-    color: black;
+    color: white;
+    font-weight:700;
   }
   .video-container{
     margin-bottom: 50px;
@@ -1193,7 +1194,7 @@ position: absolute;
     margin-top: 30px;
     margin-bottom: 20px; 
     color:white;
-    font-weigth:700;
+    font-weight:700;
   }
   .makein-para{
     font-size:23px;
