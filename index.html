@@ -21,7 +21,7 @@
     <img src="images/srmlogobg.png" alt="SRM VDP logo" id="logo">
     <div>
       <ul id="navbar">
-        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="index.html" class="activation">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="event.html">Event List</a></li>
         <li><a href="previous.html">Previous Edition</a></li>
@@ -99,64 +99,73 @@
       </video>
     </div>
     <div class="container reveal">
-      <div class="slideshow-up">
-        <div class="down">
-          <div class="down-tag">
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <div class="down-up first">
-              <a href="event1.html"><img src="images/workshop.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/AI hackathon.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/AI driven.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/AI data.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/AI debate.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/AI quiz.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/deep.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/cognitive.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/treasurehunt.jpg" alt=""></a>
-            </div>
-            <div class="down-up">
-              <a href="event1.html"><img src="images/paperpresentation.jpg" alt=""></a>
-            </div>
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-          </div>
-          <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div>
+      <p class="event-upper">Abhigyan Event poster</p>
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fader">
+          <div class="numbertext">1 / 9</div>
+          <a href="deep.html"><img src="images/deep dive.jpg" ></a>
         </div>
+      
+        <div class="mySlides fader">
+          <div class="numbertext">2 / 9</div>
+          <a href="hackathon.html"><img src="images/AI hackathon.jpg" ></a>
+        </div>
+      
+        <div class="mySlides fader">
+          <div class="numbertext">3 / 9</div>
+          <a href="aidebate.html"><img src="images/AI debate.jpg"></a>
+        </div>
+        <div class="mySlides fader">
+          <div class="numbertext">4 / 9</div>
+          <a href="aidata.html"> <img src="images/AI data battle.jpg" ></a>
+        </div>
+        <div class="mySlides fader">
+          <div class="numbertext">5 / 9</div>
+          <a href="aidriven.html"><img src="images/AI driven.jpg" ></a>
+        </div>
+        <div class="mySlides fader">
+          <div class="numbertext">6 / 9</div>
+          <a href="treasurehunt.html"><img src="images/AI treasure hunt.jpg" ></a>
+        </div>
+        <div class="mySlides fader">
+          <div class="numbertext">7 / 9</div>
+          <a href="aiquiz.html"><img src="images/AI quiz.jpg" ></a>
+        </div>
+        <div class="mySlides fader">
+          <div class="numbertext">8 / 9</div>
+          <a href="cognitiveai.html"><img src="images/cognitive Shape.jpg" ></a>
+        </div>
+        <div class="mySlides fader">
+          <div class="numbertext">9 / 9</div>
+          <a href="paperpresentation.html"><img src="images/Ai paper presentation.jpg" ></a>
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center" class="doter">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
       </div>
     </div>
     <div class="container reveal ">
       <div class="glimpse-box">
         <h2>previous Abhigyan glimpse</h2>
         <div class="cards">
-          <a href="previous.html" class="redirect">
+          <a href="about.html" class="redirect">
             <div class="text-cards">
               <img src="images/abhigyan grp photo.jpeg" class="image" alt="">
               <p class="card-text">“Creativity is thinking up new things. Innovation is doing new things.” —Theodore
@@ -164,7 +173,7 @@
                 present Abhigyan 2023</p>
             </div>
           </a>
-          <a href="previous.html" class="redirect">
+          <a href="about.html" class="redirect">
             <div class="text-cards">
               <img src="images/abhigyan grp2.jpeg" class="image" alt="">
               <p class="card-text">One of the greatest opportunity for you to unleash your hidden talents to the world .
@@ -172,11 +181,11 @@
                 innovation redefined and win exciting prizes and discover a different aspect of yourself</p>
             </div>
           </a>
-          <a href="previous.html" class="redirect">
+          <a href="about.html" class="redirect">
             <div class="text-cards">
               <img src="images/abhigyan grp3.jpeg" class="image" alt="">
               <p class="card-text">The previous edition of abhigyan is conducted on 22nd and 23rd february 2023 with the
-                presence of Dean, Vice Principal, HOD and faculty members of SRM Vadapalani .The event was a grand
+                presence of Dean, Vice Principle, HOD and faculty members of SRM Vadapalani .The event was a grand
                 success with the along the nation </p>
             </div>
           </a>
@@ -192,19 +201,24 @@
               referrerpolicy="no-referrer-when-downgrade"></iframe></p>
         </div>
         <div class="contact">
-          <p><a href="#" class="icon"><i class="fa-solid fa-location-dot"></i></a>Address:
-            SRM Institute of Science & Technology,
-            University Building, C – Block,
-            No.1, 100 Feet Road,
-            Jawaharlal Nehru Salai,
-            Adjacent to SIMS Hospital,
-            Vadapalani, Chennai – 600026
-          </p>
-          <p class="contactnumber">
-            <a href="#" class="icon"><i class="fa-solid fa-phone"></i></a>
-            Contact-details:
-            +91 9488043909 - S.Karthik (Faculty coordinator)
-          </p>
+          <div class="contact-address">
+            <a href="#" class="icon"><i class="fa-solid fa-location-dot"></i></a>
+            <p class="address">Address:
+              SRM Institute of Science & Technology,
+              University Building, C – Block,
+              No.1, 100 Feet Road,
+              Jawaharlal Nehru Salai,
+              Adjacent to SIMS Hospital,
+              Vadapalani, Chennai – 600026
+            </p>
+          </div>
+          <div class="contact-number">
+            <a href="#" class="icon-contact"><i class="fa-solid fa-phone"></i></a>
+            <p class="number">
+              Contact-details:
+              +91 9488043909 - S.Karthik (Faculty coordinator)
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -239,7 +253,7 @@
           <a href="mailto:srmecevdp01@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </li>
         <li style="--i:7;--clr:#fff">
-          <a href="https://github.com/SrmVdpEce/Abhigyanwebsite"><i class="fa-brands fa-github"></i></a>
+          <a href="https://github.com/SrmVdpEce/Abhigyanwebsite" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
       </div>
     </div>
@@ -285,15 +299,7 @@
       ScrollReveal().reveal('.video-container .promo', { delay: 500, origin: 'left' });
       ScrollReveal().reveal('.video-container .video', { delay: 500, origin: 'bottom' });
 
-      var counter = 1;
-      setInterval(function () {
-        document.getElementById('radio' + counter).checked = true;
-        counter++;
-        if (counter > 4) {
-          counter = 1;
-        }
-      }, 5000);
-
+      
       // navbar
       const bar = document.getElementById('bar');
       const close = document.getElementById('close');
@@ -301,13 +307,13 @@
 
       if (bar) {
         bar.addEventListener('click', () => {
-          nav.classList.add('active');
+          nav.classList.add('activation');
         })
       }
 
       if (close) {
         close.addEventListener('click', () => {
-          nav.classList.remove('active');
+          nav.classList.remove('activation');
         })
       }
 
