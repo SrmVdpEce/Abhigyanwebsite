@@ -25,7 +25,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="event.html">Event List</a></li>
         <li><a href="previous.html">Previous Edition</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="activation">Contact</a></li>
         <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
       </ul>
     </div>
@@ -41,19 +41,24 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe></p>
     </div>
     <div class="contact">
-      <p><a href="#" class="icon"><i class="fa-solid fa-location-dot"></i></a>Address:
-        SRM Institute of Science & Technology,
-        University Building, C – Block,
-        No.1, 100 Feet Road,
-        Jawaharlal Nehru Salai,
-        Adjacent to SIMS Hospital,
-        Vadapalani, Chennai – 600026
-      </p>
-      <p class="contactnumber">
-        <a href="#" class="icon"><i class="fa-solid fa-phone"></i></a>
-        Contact-details:
-        +91 9488043909 - S.Karthik (Faculty coordinator)
-      </p>
+      <div class="contact-address">
+        <a href="#" class="icon"><i class="fa-solid fa-location-dot"></i></a>
+        <p class="address">Address:
+          SRM Institute of Science & Technology,
+          University Building, C – Block,
+          No.1, 100 Feet Road,
+          Jawaharlal Nehru Salai,
+          Adjacent to SIMS Hospital,
+          Vadapalani, Chennai – 600026
+        </p>
+      </div>
+      <div class="contact-number">
+        <a href="#" class="icon-contact"><i class="fa-solid fa-phone"></i></a>
+        <p class="number">
+          Contact-details:
+          +91 9488043909 - S.Karthik (Faculty coordinator)
+        </p>
+      </div>
     </div>
   </div>
   <p class="click">Click this button to view our social handles</p>
@@ -102,17 +107,17 @@
 
     if (bar) {
       bar.addEventListener('click', () => {
-        nav.classList.add('active');
+        nav.classList.add('activation');
       })
     }
 
     if (close) {
       close.addEventListener('click', () => {
-        nav.classList.remove('active');
+        nav.classList.remove('activation');
       })
     }
   </script>
-   <script>
+  <script>
     const menu = document.querySelector(".menu");
     const toggle = document.querySelector(".toggle");
     toggle.addEventListener("click", () => {
@@ -120,4 +125,5 @@
     })
   </script>
 </body>
+
 </html>
