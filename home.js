@@ -49,22 +49,22 @@ function reveal() {
 
 
 
-function showSliding() {
-  let i;
-  let sliding = document.getElementsByClassName("myfader");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < sliding.length; i++) {
-    sliding[i].style.display = "none";
-  }
-  slidingIndex++;
-  if (slidingIndex > sliding.length) { slidingIndex = 1 }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  sliding[slidingIndex - 1].style.display = "block";
-  dots[slidingIndex - 1].className += " active";
-  setTimeout(showSliding, 3000); // Change image every 2 seconds
-}
+// function showSliding() {
+//   let i;
+//   let sliding = document.getElementsByClassName("myfader");
+//   let dots = document.getElementsByClassName("dot");
+//   for (i = 0; i < sliding.length; i++) {
+//     sliding[i].style.display = "none";
+//   }
+//   slidingIndex++;
+//   if (slidingIndex > sliding.length) { slidingIndex = 1 }
+//   for (i = 0; i < dots.length; i++) {
+//     dots[i].className = dots[i].className.replace(" active", "");
+//   }
+//   sliding[slidingIndex - 1].style.display = "block";
+//   dots[slidingIndex - 1].className += " active";
+//   setTimeout(showSliding, 3000); // Change image every 2 seconds
+// }
 
 // upper slider
 function changeSlide(n) {
@@ -91,6 +91,36 @@ function showSlides() {
   setTimeout(showSlides, 5000); // Change image every 3 seconds
 }
 
+
+
+let sliderIndex = 1;
+showSlider(sliderIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlider(sliderIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlider(sliderIndex = n);
+}
+
+function showSlider(n) {
+  let i;
+  let slider = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slider.length) {sliderIndex = 1}
+  if (n < 1) {sliderIndex = slider.length}
+  for (i = 0; i < slider.length; i++) {
+    slider[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slider[sliderIndex-1].style.display = "block";
+  dots[sliderIndex-1].className += " active";
+}
 
 
 
